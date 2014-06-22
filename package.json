@@ -1,0 +1,11 @@
+{
+  "name": "stem-summerscore",
+  "version": "1.0.0",
+  "description": "Displays the teams scores during the summer sale promo",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Alvin Lazaro <me@alvinl.com>",
+  "license": "MIT"
+}
