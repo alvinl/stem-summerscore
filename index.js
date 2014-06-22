@@ -22,7 +22,7 @@ module.exports = function (Stem) {
   };
   
   // Register `score` as a admin command
-  Stem.api.addCommand('score', function (steamID) {
+  Stem.api.addCommand('scores', function (steamID) {
     
     // Fetch the current team scores
     request('http://store.steampowered.com/promotion/summer2014teamscoreajax', function (err, response, body) {
