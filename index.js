@@ -2,12 +2,6 @@
 module.exports = function (Stem) {
 
   /**
-   * Dependencies
-   */
-  
-  var request = require('request').defaults({ json: true });
-
-  /**
    * Team names
    * @type {Object}
    */
@@ -25,7 +19,7 @@ module.exports = function (Stem) {
   Stem.api.addCommand('scores', function (steamID) {
     
     // Fetch the current team scores
-    request('http://store.steampowered.com/promotion/summer2014teamscoreajax', function (err, response, body) {
+    Stem.api.request({ url: 'http://store.steampowered.com/promotion/summer2014teamscoreajax', json: true }, function (err, response, body) {
         
       if (err || response.statusCode !== 200)
         return Stem.bot.sendMessage(steamID, 'Error fetching team scores');
@@ -53,6 +47,6 @@ module.exports = function (Stem) {
 
     });
 
-  }, 1);
+  }, 0);
 
 };

@@ -1,6 +1,6 @@
 {
   "name": "stem-summerscore",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "Displays the teams scores during the summer sale promo",
   "main": "index.js",
   "scripts": {
